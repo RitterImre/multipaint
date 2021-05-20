@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>694</width>
+    <height>373</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>CrossCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MultiPaint</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Resources.qrc">
+    <normaloff>:/images/contents/multipaint_icon.png</normaloff>:/images/contents/multipaint_icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>694</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuSave_as">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Save as...</string>
+     </property>
+    </widget>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="menuSave_as"/>
+    <addaction name="actionPrint"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionClear_Screen"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionHow_to_use"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionPen_Color"/>
+    <addaction name="actionPen_Width"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionClear_Screen"/>
+   <addaction name="actionPen_Color"/>
+   <addaction name="actionPen_Width"/>
+   <addaction name="actionPrint"/>
+   <addaction name="actionHow_to_use"/>
+   <addaction name="actionAbout"/>
+   <addaction name="actionExit"/>
+  </widget>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/icons/new_file_icon.png</normaloff>:/images/icons/new_file_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>New...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/icons/open_icon.png</normaloff>:/images/icons/open_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/icons/save_icon.png</normaloff>:/images/icons/save_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/icons/exit_icon.png</normaloff>:/images/icons/exit_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionPen_Color">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/icons/colors_icon.png</normaloff>:/images/icons/colors_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pen Color</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionPen_Width">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/icons/pen_width_icon.png</normaloff>:/images/icons/pen_width_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pen Width</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionClear_Screen">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/icons/clear_screen_icon.png</normaloff>:/images/icons/clear_screen_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear Screen</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/icons/about_icon.png</normaloff>:/images/icons/about_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/icons/print_icon.png</normaloff>:/images/icons/print_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionHow_to_use">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/icons/how_to_use_icon.png</normaloff>:/images/icons/how_to_use_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>How to use</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

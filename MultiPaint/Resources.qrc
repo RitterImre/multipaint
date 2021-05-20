@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>icons/open_icon.png</file>
+        <file>icons/save_icon.png</file>
+        <file>icons/exit_icon.png</file>
+        <file>icons/print_icon.png</file>
+        <file>icons/about_icon.png</file>
+        <file>icons/how_to_use_icon.png</file>
+        <file>icons/colors_icon.png</file>
+        <file>icons/clear_screen_icon.png</file>
+        <file>icons/pen_width_icon.png</file>
+        <file>contents/multipaint_icon.png</file>
+        <file>icons/new_file_icon.png</file>
+    </qresource>
+    <qresource prefix="/contents"/>
+</RCC>
